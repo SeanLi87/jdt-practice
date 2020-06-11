@@ -7,7 +7,7 @@ public class Wework extends BasePage{
         super("com.tencent.wework", ".launch.LaunchSplashActivity");
     }
 
-    public 日程Page 日程(){
+    public 日程Page schedule(){
         click(By.xpath("//*[@text='日程']"));
         return new 日程Page(driver);
     }

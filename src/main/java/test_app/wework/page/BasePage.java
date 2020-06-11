@@ -46,7 +46,7 @@ public class BasePage {
 
         URL remoteUrl = null;
         try {
-            remoteUrl = new URL("http://127.0.0.1:4723/wd/hub");
+            remoteUrl = new URL("http://127.0.0.1:4723/wd/hub");//appium server的地址
         } catch (MalformedURLException e) {
             e.printStackTrace();
             System.exit(1);
