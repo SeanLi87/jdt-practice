@@ -11,9 +11,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+
 
 public class BasePage {
-    private final int timeOutInSecondsDefault = 60;
+    private final int timeOutInSecondsDefault = 60; //显式等待时间
     //    AndroidDriver<MobileElement> driver;
     AppiumDriver<MobileElement> driver;
     //    IOSDriver
@@ -54,7 +57,7 @@ public class BasePage {
 
         driver = new AndroidDriver(remoteUrl, desiredCapabilities);
         //todo: 等待优化
-        driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);//隐式等待时间
         wait = new WebDriverWait(driver, timeOutInSecondsDefault);
     }
 
@@ -90,7 +93,7 @@ public class BasePage {
         driver.findElement(by).sendKeys(content);
     }
 
-    //todo:
+    //todo
     public void waitElement() {
 
     }
