@@ -20,6 +20,7 @@ class 日程PageTest {
     }
     @BeforeEach
     void setUp() {
+        wework.driver.closeApp();
     }
 
     @AfterEach
