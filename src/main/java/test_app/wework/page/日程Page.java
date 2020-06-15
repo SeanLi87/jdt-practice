@@ -27,8 +27,6 @@ public class 日程Page extends BasePage{
 
     }
 
-    //todo 增加方法初始化day
-
     public 日程Page add(String name, String day){
         click(add);
         sendKeys(taskName, name);

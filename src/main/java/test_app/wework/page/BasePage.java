@@ -2,7 +2,10 @@ package test_app.wework.page;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,19 +13,22 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 
 
 public class BasePage {
-    private final int timeOutInSecondsDefault = 60; //显式等待时间
-    //    AndroidDriver<MobileElement> driver;
+    private final int timeOutInSecondsDefault = 10; //显式等待时间
     AppiumDriver<MobileElement> driver;
+
     //    IOSDriver
     WebDriverWait wait;
     String packageName;
     String activityName;
+    WaitOptions waitOption;
+    TouchAction action;
 
     public BasePage(String packageName, String activityName) {
         this.packageName = packageName;
@@ -34,6 +40,8 @@ public class BasePage {
     public BasePage(AppiumDriver<MobileElement> driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, timeOutInSecondsDefault);
+        waitOption = WaitOptions.waitOptions(Duration.ofSeconds(3));
+        action = new TouchAction(driver);
     }
 
     public void startApp(String packageName, String activityName){
@@ -85,7 +93,8 @@ public class BasePage {
 
     public void click(String text) {
         //todo: 异常处理
-        find(text).click();
+//        find(text).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(byText(text))).click();
     }
 
 
@@ -96,6 +105,38 @@ public class BasePage {
     //todo
     public void waitElement() {
 
+    }
+
+    public boolean isElementExist(By by){
+//        try{
+//            driver.findElements(by);
+//            return true;
+//        }
+//        catch (org.openqa.selenium.NoSuchElementException ex){
+//            return false;
+//        }
+        driver.findElements(by);
+        return true;
+    }
+
+    public boolean isElementExist(String text){
+        try{
+            driver.findElements(byText(text));
+            return true;
+        }
+        catch (org.openqa.selenium.NoSuchElementException ex){
+            return false;
+        }
+    }
+
+    public void longPress(String text){
+        PointOption startPoint = PointOption.point(find(text).getLocation());
+        action.longPress(startPoint).waitAction(waitOption).perform();
+    }
+
+    public void longPress(By by){
+        PointOption startPoint = PointOption.point(find(by).getLocation());
+        action.longPress(startPoint).waitAction(waitOption).perform();
     }
 
 
