@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.Date;
 import java.text.SimpleDateFormat;
@@ -86,6 +87,16 @@ public class BasePage {
         return driver.findElement(byText(text));
     }
 
+    public List<MobileElement> findEls(By by) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+        return driver.findElements(by);
+    }
+
+    public List<MobileElement> findEls(String text) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(byText(text)));
+        return driver.findElements(byText(text));
+    }
+
     public void click(By by) {
         //todo: 异常处理
         wait.until(ExpectedConditions.visibilityOfElementLocated(by)).click();
@@ -93,7 +104,6 @@ public class BasePage {
 
     public void click(String text) {
         //todo: 异常处理
-//        find(text).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(byText(text))).click();
     }
 
@@ -107,7 +117,7 @@ public class BasePage {
 
     }
 
-    public boolean isElementExist(By by){
+//    public boolean isElementExist(By by){
 //        try{
 //            driver.findElements(by);
 //            return true;
@@ -115,19 +125,19 @@ public class BasePage {
 //        catch (org.openqa.selenium.NoSuchElementException ex){
 //            return false;
 //        }
-        driver.findElements(by);
-        return true;
-    }
-
-    public boolean isElementExist(String text){
-        try{
-            driver.findElements(byText(text));
-            return true;
-        }
-        catch (org.openqa.selenium.NoSuchElementException ex){
-            return false;
-        }
-    }
+//        driver.findElements(by);
+//        return true;
+//    }
+//
+//    public boolean isElementExist(String text){
+//        try{
+//            driver.findElements(byText(text));
+//            return true;
+//        }
+//        catch (org.openqa.selenium.NoSuchElementException ex){
+//            return false;
+//        }
+//    }
 
     public void longPress(String text){
         PointOption startPoint = PointOption.point(find(text).getLocation());
@@ -137,6 +147,10 @@ public class BasePage {
     public void longPress(By by){
         PointOption startPoint = PointOption.point(find(by).getLocation());
         action.longPress(startPoint).waitAction(waitOption).perform();
+    }
+
+    public void refresh(){
+        driver.resetApp();
     }
 
 

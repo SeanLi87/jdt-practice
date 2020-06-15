@@ -7,9 +7,9 @@ public class Wework extends BasePage{
         super("com.tencent.wework", ".launch.LaunchSplashActivity");
     }
 
-    public 日程Page schedule(){
+    public SchedulePage schedule(){
         click(By.xpath("//*[@text='日程']"));
-        return new 日程Page(driver);
+        return new SchedulePage(driver);
     }
 
     public TodoPage todo(){

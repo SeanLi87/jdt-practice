@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class 日程PageTest {
+class SchedulePageTest {
 
     private static Wework wework;
     private static String day = "13";//todo 暂时只能测试当月日期,其他月份需要添加滑动操作

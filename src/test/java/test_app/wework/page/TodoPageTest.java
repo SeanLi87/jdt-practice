@@ -22,7 +22,7 @@ class TodoPageTest {
 
     @AfterEach
     void tearDown() {
-//        wework.driver.closeApp();//todo 需要针对不同case设置回到主页面的操作，减少程序打开时间
+        wework.driver.closeApp();//todo 需要针对不同case设置回到主页面的操作，减少程序打开时间
     }
 
     @Test//添加todo
@@ -36,7 +36,7 @@ class TodoPageTest {
     }
 
     @Test//完成todo
-    //todo done掉todo之后会出现不能获取到缓存dom里的元素，但是在相同页面可以获取，猜测要么是dom需要额外时间重新加载，或者需要发请求重新获取一次dom，晚上尝试一下
+    //todo done掉todo之后会出现不能获取到cache里的dom元素,还未解决
     void doneTodo() {
         assertFalse(wework.todo().doneTodo("完成作业06").getTodoList().contains("完成作业06"));
     }
@@ -52,10 +52,5 @@ class TodoPageTest {
     }
 
     //todo 如何降低case之间的耦合？如何快捷地为每个case增加单独的数据构造
-
-    @Test
-    void test(){
-        System.out.println(wework.todo().getTodoList());
-    }
 
 }

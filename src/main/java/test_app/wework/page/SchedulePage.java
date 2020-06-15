@@ -4,11 +4,10 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
 
-import java.lang.reflect.Array;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class 日程Page extends BasePage{
+public class SchedulePage extends BasePage{
     //todo:多版本app、多平台的app 定位符通常有差别
     private final By taskName = By.id("b2k");
     private final By save = byText("保存");
@@ -22,12 +21,12 @@ public class 日程Page extends BasePage{
     private final By deleteButton = By.id("bfi");
 
 
-    public 日程Page(AppiumDriver<MobileElement> driver) {
+    public SchedulePage(AppiumDriver<MobileElement> driver) {
         super(driver);
 
     }
 
-    public 日程Page add(String name, String day){
+    public SchedulePage add(String name, String day){
         click(add);
         sendKeys(taskName, name);
         click(selectDate);
@@ -44,7 +43,7 @@ public class 日程Page extends BasePage{
         return driver.findElements(taskList).stream().map(x->x.getText()).collect(Collectors.toList());
     }
 
-    public 日程Page delete(String day){
+    public SchedulePage delete(String day){
         List scheduleList = getSchedule(day);
         for (Object schedule:scheduleList){
             click(taskList);
