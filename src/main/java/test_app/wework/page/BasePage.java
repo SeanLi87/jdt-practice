@@ -7,6 +7,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -21,7 +22,7 @@ import java.text.SimpleDateFormat;
 
 
 public class BasePage {
-    private final int timeOutInSecondsDefault = 10; //显式等待时间
+    private final int timeOutInSecondsDefault = 30; //显式等待时间
     AppiumDriver<MobileElement> driver;
 
     //    IOSDriver
@@ -41,7 +42,7 @@ public class BasePage {
     public BasePage(AppiumDriver<MobileElement> driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, timeOutInSecondsDefault);
-        waitOption = WaitOptions.waitOptions(Duration.ofSeconds(3));
+        waitOption = WaitOptions.waitOptions(Duration.ofMillis(200));
         action = new TouchAction(driver);
     }
 
@@ -68,6 +69,8 @@ public class BasePage {
         //todo: 等待优化
         driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);//隐式等待时间
         wait = new WebDriverWait(driver, timeOutInSecondsDefault);
+        action = new TouchAction(driver);
+        waitOption = WaitOptions.waitOptions(Duration.ofMillis(200));
     }
 
 
@@ -149,10 +152,31 @@ public class BasePage {
         action.longPress(startPoint).waitAction(waitOption).perform();
     }
 
-    public void refresh(){
-        driver.resetApp();
+//    public void refresh(){
+//        driver.resetApp();
+//    }
+
+    public void swipe(By from, By to){
+        System.out.println("startpoint"+find(from).getLocation());
+        System.out.println("endpoint"+find(to).getLocation());
+        PointOption startPoint = PointOption.point(find(from).getLocation());
+        PointOption endPoint = PointOption.point(find(to).getLocation());
+        action.press(startPoint).waitAction(waitOption).moveTo(endPoint).perform();
+    }
+    public void swipe(String from, String to){
+        System.out.println("startpoint"+find(from).getLocation());
+        System.out.println("endpoint"+find(to).getLocation());
+        PointOption startPoint = PointOption.point(find(from).getLocation());
+        PointOption endPoint = PointOption.point(find(to).getLocation());
+        action.press(startPoint).waitAction(waitOption).moveTo(endPoint).perform();
+
     }
 
+    public void swipe(int [] from, int [] to){
+        PointOption startPoint = PointOption.point(from[0],from[1]);
+        PointOption endPoint = PointOption.point(to[0],to[1]);
+        action.press(startPoint).waitAction(waitOption).moveTo(endPoint).perform();
 
+    }
 
 }

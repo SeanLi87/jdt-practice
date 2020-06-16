@@ -17,5 +17,13 @@ public class Wework extends BasePage{
         return new TodoPage(driver);
     }
 
+    public ReportPage report(){
+        click("工作台");
+        //todo 往下滑动
+        swipe("效率工具","工作台");
+        click("汇报");
+        return new ReportPage(driver);
+    }
+
 
 }
