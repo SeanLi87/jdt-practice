@@ -29,8 +29,7 @@ public class TodoPage extends BasePage{
     }
 
     public List<String> getTodoList(){
-        List<String> list = findEls(todo).stream().map(x->x.getText()).collect(Collectors.toList());
-        return list;//获取所有未完成待办事项
+        return findEls(todo).stream().map(x->x.getText()).collect(Collectors.toList());//若在指定时间内找不到元素则返回空List
     }
 
     public TodoPage doneTodo(String name){
@@ -43,7 +42,7 @@ public class TodoPage extends BasePage{
 
     public List<String> getDoneList(){
         click("显示已完成事项"); //点击显示完成的待办事项
-        return driver.findElements(By.id("gw9")).stream().map(x->x.getText()).collect(Collectors.toList());//获取所有未完成待办事项
+        return findEls(todo).stream().map(x->x.getText()).collect(Collectors.toList());//若在指定时间内找不到元素则返回空List
     }
 
     public TodoPage deleteTodo(String name){

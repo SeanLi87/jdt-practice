@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
+import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.Date;
@@ -22,7 +23,7 @@ import java.text.SimpleDateFormat;
 
 
 public class BasePage {
-    private final int timeOutInSecondsDefault = 30; //显式等待时间
+    private final int timeOutInSecondsDefault = 5; //显式等待时间
     AppiumDriver<MobileElement> driver;
 
     //    IOSDriver
@@ -91,13 +92,24 @@ public class BasePage {
     }
 
     public List<MobileElement> findEls(By by) {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(by));
-        return driver.findElements(by);
+        try {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+            return driver.findElements(by);
+        }
+        catch (org.openqa.selenium.TimeoutException ex){
+            return Collections.emptyList();
+        }
     }
 
     public List<MobileElement> findEls(String text) {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(byText(text)));
-        return driver.findElements(byText(text));
+        try {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(byText(text)));
+            return driver.findElements(byText(text));
+        }
+        catch (org.openqa.selenium.TimeoutException ex){
+            return Collections.emptyList();
+        }
+
     }
 
     public void click(By by) {
