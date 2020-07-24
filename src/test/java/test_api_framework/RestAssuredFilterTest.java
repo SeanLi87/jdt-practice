@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 
 import java.io.IOException;
+import java.util.Base64;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.equalTo;
@@ -22,22 +23,19 @@ public class RestAssuredFilterTest {
             Response originResponse = ctx.next(req, res);
             //ResponseBuilder的作用主要是在Response的基础上建设出来一个新的可以修改body的对象
             ResponseBuilder responseBuilder = new ResponseBuilder().clone(originResponse);
+            //解密
             String body = originResponse.body().asString();
-            String decode = null;
-            try {
-                decode = utils.doubleDecodeB64(body);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            byte[] decode1 = Base64.getDecoder().decode(body);
+            byte[] decode2 = Base64.getDecoder().decode(decode1);
+            String decode = new String(decode2);
             //ResponseBuilder在最后通过build方法直接创建一个用于返回的不可修改的Response
             Response responseNew=responseBuilder.setBody(decode).build();
             return responseNew;
-
         })
                 .when()
-                .get("http://localhost:8000/double_encode_basee64.json")
+                .get("http://localhost:8000/raw.json")
                 .then()
-                .body("category_list.categories[0].name",equalTo("圣诞舞会"));
+                .body("category_list.categories[0].name",equalTo("霍格沃兹测试学院公众号"));
 
     }
 }
