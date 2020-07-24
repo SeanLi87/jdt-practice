@@ -4,6 +4,8 @@ import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
 
+import io.restassured.filter.Filter.*;
+
 public class DepartmentApiObject {
 
     public Response createDepartment(String name, String name_en, String id, String accessToken) {
