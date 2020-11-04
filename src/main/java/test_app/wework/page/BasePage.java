@@ -42,7 +42,7 @@ public class BasePage {
 
     public BasePage(AppiumDriver<MobileElement> driver) {
         this.driver = driver;
-        wait = new WebDriverWait(driver, timeOutInSecondsDefault);
+        wait = new WebDriverWait(driver, timeOutInSecondsDefault,200);
         waitOption = WaitOptions.waitOptions(Duration.ofMillis(200));
         action = new TouchAction(driver);
     }
@@ -115,6 +115,7 @@ public class BasePage {
     public void click(By by) {
         //todo: 异常处理
         wait.until(ExpectedConditions.visibilityOfElementLocated(by)).click();
+
     }
 
     public void click(String text) {
@@ -173,21 +174,21 @@ public class BasePage {
         System.out.println("endpoint"+find(to).getLocation());
         PointOption startPoint = PointOption.point(find(from).getLocation());
         PointOption endPoint = PointOption.point(find(to).getLocation());
-        action.press(startPoint).waitAction(waitOption).moveTo(endPoint).perform();
+        action.press(startPoint).waitAction(waitOption).moveTo(endPoint).release().perform();
     }
     public void swipe(String from, String to){
         System.out.println("startpoint"+find(from).getLocation());
         System.out.println("endpoint"+find(to).getLocation());
         PointOption startPoint = PointOption.point(find(from).getLocation());
         PointOption endPoint = PointOption.point(find(to).getLocation());
-        action.press(startPoint).waitAction(waitOption).moveTo(endPoint).perform();
+        action.press(startPoint).waitAction(waitOption).moveTo(endPoint).release().perform();
 
     }
 
     public void swipe(int [] from, int [] to){
         PointOption startPoint = PointOption.point(from[0],from[1]);
         PointOption endPoint = PointOption.point(to[0],to[1]);
-        action.press(startPoint).waitAction(waitOption).moveTo(endPoint).perform();
+        action.press(startPoint).waitAction(waitOption).moveTo(endPoint).release().perform();
 
     }
 

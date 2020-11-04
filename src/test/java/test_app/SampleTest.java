@@ -6,6 +6,7 @@ import junit.framework.TestCase;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -14,7 +15,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class SampleTest {
 
-    private AndroidDriver driver;
+    private AndroidDriver<MobileElement> driver;
 
     @Before
     public void setUp() throws MalformedURLException {
@@ -24,6 +25,7 @@ public class SampleTest {
         desiredCapabilities.setCapability("appPackage", "com.xueqiu.android");
         desiredCapabilities.setCapability("appActivity", ".view.WelcomeActivityAlias");
         desiredCapabilities.setCapability("noReset", "true");
+        desiredCapabilities.setCapability("udid", "emulator-5556");
 //        desiredCapabilities.setCapability("dontStopAppOnReset", "true");
 
         URL remoteUrl = new URL("http://127.0.0.1:4723/wd/hub");
@@ -35,11 +37,11 @@ public class SampleTest {
 
     @Test
     public void sampleTest() {
-        MobileElement el4 = (MobileElement) driver.findElementById("com.xueqiu.android:id/home_search");
+        MobileElement el4 = driver.findElementById("com.xueqiu.android:id/home_search");
         el4.click();
-        MobileElement el5 = (MobileElement) driver.findElementById("com.xueqiu.android:id/search_input_text");
+        MobileElement el5 = driver.findElementById("com.xueqiu.android:id/search_input_text");
         el5.sendKeys("alibaba");
-        MobileElement el6 = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.TextView[1]");
+        MobileElement el6 = driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.TextView[1]");
         el6.click();
     }
 

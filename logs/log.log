@@ -1,0 +1,214 @@
+2020-07-20 16:06:16  [ ForkJoinPool-1-worker-1:0 ] - [ INFO ]  info121595232376786
+2020-07-20 16:06:16  [ ForkJoinPool-1-worker-1:4 ] - [ DEBUG ]  debug121595232376791
+2020-07-20 16:06:16  [ ForkJoinPool-1-worker-1:4 ] - [ ERROR ]  error121595232376791
+2020-07-20 16:08:51  [ ForkJoinPool-1-worker-1:0 ] - [ INFO ]  info121595232531241
+2020-07-20 16:08:51  [ ForkJoinPool-1-worker-1:4 ] - [ DEBUG ]  debug121595232531245
+2020-07-20 16:08:51  [ ForkJoinPool-1-worker-1:5 ] - [ ERROR ]  error121595232531246
+2020-07-20 16:10:15  [ ForkJoinPool-1-worker-1:0 ] - [ INFO ]  info121595232615514
+2020-07-20 16:10:15  [ ForkJoinPool-1-worker-1:4 ] - [ DEBUG ]  debug121595232615518
+2020-07-20 16:10:15  [ ForkJoinPool-1-worker-1:4 ] - [ ERROR ]  error121595232615518
+2020-07-20 17:05:39  [ ForkJoinPool-1-worker-1:0 ] - [ INFO ]  info121595235939661
+2020-07-20 17:05:39  [ ForkJoinPool-1-worker-1:3 ] - [ DEBUG ]  debug121595235939664
+2020-07-20 17:05:39  [ ForkJoinPool-1-worker-1:4 ] - [ ERROR ]  error121595235939665
+2020-07-20 17:23:23  [ ForkJoinPool-1-worker-1:0 ] - [ INFO ]  info121595237003149
+2020-07-20 17:23:23  [ ForkJoinPool-1-worker-1:4 ] - [ DEBUG ]  debug121595237003154
+2020-07-20 17:23:23  [ ForkJoinPool-1-worker-1:5 ] - [ ERROR ]  error121595237003155
+2020-07-20 17:28:24  [ ForkJoinPool-1-worker-1:0 ] - [ INFO ]  info121595237304146
+2020-07-20 17:28:24  [ ForkJoinPool-1-worker-1:6 ] - [ DEBUG ]  debug121595237304153
+2020-07-20 17:28:24  [ ForkJoinPool-1-worker-1:6 ] - [ ERROR ]  error121595237304153
+2020-07-20 22:31:56  [ ForkJoinPool-1-worker-1:0 ] - [ DEBUG ]  Get connection for route {s}->https://qyapi.weixin.qq.com:443
+2020-07-20 22:31:58  [ ForkJoinPool-1-worker-1:2971 ] - [ DEBUG ]  Connecting to qyapi.weixin.qq.com:443
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3325 ] - [ DEBUG ]  CookieSpec selected: ignoreCookies
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3331 ] - [ DEBUG ]  Auth cache not set in the context
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3332 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3333 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3333 ] - [ DEBUG ]  Attempt 1 to execute request
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3334 ] - [ DEBUG ]  Sending request: GET /cgi-bin/gettoken?corpid=wwf463180fbf61bcc9&corpsecret=i9ZSvrhju10SVzEl7-SIOFNRCK3m_Wq_FDyYRgnpP84 HTTP/1.1
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3335 ] - [ DEBUG ]   >> "GET /cgi-bin/gettoken?corpid=wwf463180fbf61bcc9&corpsecret=i9ZSvrhju10SVzEl7-SIOFNRCK3m_Wq_FDyYRgnpP84 HTTP/1.1[\r][\n]"
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3337 ] - [ DEBUG ]   >> "Accept: */*[\r][\n]"
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3337 ] - [ DEBUG ]   >> "Host: qyapi.weixin.qq.com[\r][\n]"
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3338 ] - [ DEBUG ]   >> "Connection: Keep-Alive[\r][\n]"
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3338 ] - [ DEBUG ]   >> "User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_161)[\r][\n]"
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3338 ] - [ DEBUG ]   >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3339 ] - [ DEBUG ]   >> "[\r][\n]"
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3339 ] - [ DEBUG ]  >> GET /cgi-bin/gettoken?corpid=wwf463180fbf61bcc9&corpsecret=i9ZSvrhju10SVzEl7-SIOFNRCK3m_Wq_FDyYRgnpP84 HTTP/1.1
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3340 ] - [ DEBUG ]  >> Accept: */*
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3341 ] - [ DEBUG ]  >> Host: qyapi.weixin.qq.com
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3341 ] - [ DEBUG ]  >> Connection: Keep-Alive
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3342 ] - [ DEBUG ]  >> User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_161)
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3343 ] - [ DEBUG ]  >> Accept-Encoding: gzip,deflate
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3437 ] - [ DEBUG ]   << "HTTP/1.1 200 OK[\r][\n]"
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3439 ] - [ DEBUG ]   << "Server: nginx[\r][\n]"
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3440 ] - [ DEBUG ]   << "Date: Mon, 20 Jul 2020 14:32:24 GMT[\r][\n]"
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3440 ] - [ DEBUG ]   << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3441 ] - [ DEBUG ]   << "Content-Length: 277[\r][\n]"
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3441 ] - [ DEBUG ]   << "Connection: keep-alive[\r][\n]"
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3441 ] - [ DEBUG ]   << "Error-Code: 0[\r][\n]"
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3442 ] - [ DEBUG ]   << "Error-Msg: ok[\r][\n]"
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3442 ] - [ DEBUG ]   << "[\r][\n]"
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3444 ] - [ DEBUG ]  Receiving response: HTTP/1.1 200 OK
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3444 ] - [ DEBUG ]  << HTTP/1.1 200 OK
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3445 ] - [ DEBUG ]  << Server: nginx
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3446 ] - [ DEBUG ]  << Date: Mon, 20 Jul 2020 14:32:24 GMT
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3446 ] - [ DEBUG ]  << Content-Type: application/json; charset=UTF-8
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3447 ] - [ DEBUG ]  << Content-Length: 277
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3448 ] - [ DEBUG ]  << Connection: keep-alive
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3450 ] - [ DEBUG ]  << Error-Code: 0
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3450 ] - [ DEBUG ]  << Error-Msg: ok
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3455 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3510 ] - [ DEBUG ]  Parsing response as: application/json; charset=UTF-8
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3511 ] - [ DEBUG ]  Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3778 ] - [ DEBUG ]   << "{"errcode":0,"errmsg":"ok","access_token":"KxWj038wrO_DXr0ta-I-xPW4Q0BlH-oMN5Ju0LwGOE9WW0cIK4AaJx9G0DBkuACdL6WO70Ux1ixMCfBgEzY8MThOoStbj-SnejS6NkE89glVcH-F99p3lGvlIcVJC-GIlGBNf-PxbDJ9mxRd81vZYWLnEpr1f295VWooPyoUNYTpt8kLcQB71yp4q9r3Cnilv0nsGERa_hwHdZYjZxEe7A","expires_in":7200}"
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3780 ] - [ DEBUG ]  Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@9d21453
+2020-07-20 22:31:59  [ ForkJoinPool-1-worker-1:3780 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4481 ] - [ DEBUG ]  Get connection for route {s}->https://qyapi.weixin.qq.com:443
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4482 ] - [ DEBUG ]  Connecting to qyapi.weixin.qq.com:443
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4701 ] - [ DEBUG ]  CookieSpec selected: ignoreCookies
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4701 ] - [ DEBUG ]  Auth cache not set in the context
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4702 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4702 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4702 ] - [ DEBUG ]  Attempt 1 to execute request
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4703 ] - [ DEBUG ]  Sending request: POST /cgi-bin/user/create?access_token=KxWj038wrO_DXr0ta-I-xPW4Q0BlH-oMN5Ju0LwGOE9WW0cIK4AaJx9G0DBkuACdL6WO70Ux1ixMCfBgEzY8MThOoStbj-SnejS6NkE89glVcH-F99p3lGvlIcVJC-GIlGBNf-PxbDJ9mxRd81vZYWLnEpr1f295VWooPyoUNYTpt8kLcQB71yp4q9r3Cnilv0nsGERa_hwHdZYjZxEe7A HTTP/1.1
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4703 ] - [ DEBUG ]   >> "POST /cgi-bin/user/create?access_token=KxWj038wrO_DXr0ta-I-xPW4Q0BlH-oMN5Ju0LwGOE9WW0cIK4AaJx9G0DBkuACdL6WO70Ux1ixMCfBgEzY8MThOoStbj-SnejS6NkE89glVcH-F99p3lGvlIcVJC-GIlGBNf-PxbDJ9mxRd81vZYWLnEpr1f295VWooPyoUNYTpt8kLcQB71yp4q9r3Cnilv0nsGERa_hwHdZYjZxEe7A HTTP/1.1[\r][\n]"
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4703 ] - [ DEBUG ]   >> "Accept: */*[\r][\n]"
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4704 ] - [ DEBUG ]   >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4704 ] - [ DEBUG ]   >> "Content-Length: 68[\r][\n]"
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4704 ] - [ DEBUG ]   >> "Host: qyapi.weixin.qq.com[\r][\n]"
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4704 ] - [ DEBUG ]   >> "Connection: Keep-Alive[\r][\n]"
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4705 ] - [ DEBUG ]   >> "User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_161)[\r][\n]"
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4705 ] - [ DEBUG ]   >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4706 ] - [ DEBUG ]   >> "[\r][\n]"
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4706 ] - [ DEBUG ]  >> POST /cgi-bin/user/create?access_token=KxWj038wrO_DXr0ta-I-xPW4Q0BlH-oMN5Ju0LwGOE9WW0cIK4AaJx9G0DBkuACdL6WO70Ux1ixMCfBgEzY8MThOoStbj-SnejS6NkE89glVcH-F99p3lGvlIcVJC-GIlGBNf-PxbDJ9mxRd81vZYWLnEpr1f295VWooPyoUNYTpt8kLcQB71yp4q9r3Cnilv0nsGERa_hwHdZYjZxEe7A HTTP/1.1
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4706 ] - [ DEBUG ]  >> Accept: */*
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4707 ] - [ DEBUG ]  >> Content-Type: text/plain; charset=ISO-8859-1
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4707 ] - [ DEBUG ]  >> Content-Length: 68
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4708 ] - [ DEBUG ]  >> Host: qyapi.weixin.qq.com
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4708 ] - [ DEBUG ]  >> Connection: Keep-Alive
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4708 ] - [ DEBUG ]  >> User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_161)
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4709 ] - [ DEBUG ]  >> Accept-Encoding: gzip,deflate
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4709 ] - [ DEBUG ]   >> "{[\n]"
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4709 ] - [ DEBUG ]   >> "    "userid": "121595255520441",[\n]"
+2020-07-20 22:32:00  [ ForkJoinPool-1-worker-1:4710 ] - [ DEBUG ]   >> "    "name": "??121595255520441"+}"
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5069 ] - [ DEBUG ]   << "HTTP/1.1 200 OK[\r][\n]"
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5070 ] - [ DEBUG ]   << "Server: nginx[\r][\n]"
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5070 ] - [ DEBUG ]   << "Date: Mon, 20 Jul 2020 14:32:26 GMT[\r][\n]"
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5071 ] - [ DEBUG ]   << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5071 ] - [ DEBUG ]   << "Content-Length: 224[\r][\n]"
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5071 ] - [ DEBUG ]   << "Connection: keep-alive[\r][\n]"
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5072 ] - [ DEBUG ]   << "Error-Code: 40066[\r][\n]"
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5072 ] - [ DEBUG ]   << "Error-Msg: Warning: wrong json format. invalid party list, hint: [1595255546_52_87b93927819055fd556472f36398893e], from ip: 110.184.71.190, more info at https://open.work.weixin.qq.com/devtool/query?e=40066[\r][\n]"
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5073 ] - [ DEBUG ]   << "[\r][\n]"
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5073 ] - [ DEBUG ]  Receiving response: HTTP/1.1 200 OK
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5073 ] - [ DEBUG ]  << HTTP/1.1 200 OK
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5074 ] - [ DEBUG ]  << Server: nginx
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5074 ] - [ DEBUG ]  << Date: Mon, 20 Jul 2020 14:32:26 GMT
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5074 ] - [ DEBUG ]  << Content-Type: application/json; charset=UTF-8
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5075 ] - [ DEBUG ]  << Content-Length: 224
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5075 ] - [ DEBUG ]  << Connection: keep-alive
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5076 ] - [ DEBUG ]  << Error-Code: 40066
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5076 ] - [ DEBUG ]  << Error-Msg: Warning: wrong json format. invalid party list, hint: [1595255546_52_87b93927819055fd556472f36398893e], from ip: 110.184.71.190, more info at https://open.work.weixin.qq.com/devtool/query?e=40066
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5077 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5078 ] - [ DEBUG ]  Parsing response as: application/json; charset=UTF-8
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5078 ] - [ DEBUG ]  Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5104 ] - [ DEBUG ]   << "{"errcode":40066,"errmsg":"Warning: wrong json format. invalid party list, hint: [1595255546_52_87b93927819055fd556472f36398893e], from ip: 110.184.71.190, more info at https://open.work.weixin.qq.com/devtool/query?e=40066"}"
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5104 ] - [ DEBUG ]  Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@92aebff
+2020-07-20 22:32:01  [ ForkJoinPool-1-worker-1:5105 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+2020-07-20 22:32:01  [ Finalizer:5312 ] - [ DEBUG ]  Connection 0.0.0.0:51255<->183.3.234.106:443 closed
+2020-07-20 22:36:33  [ ForkJoinPool-1-worker-1:0 ] - [ DEBUG ]  Get connection for route {s}->https://qyapi.weixin.qq.com:443
+2020-07-20 22:36:35  [ ForkJoinPool-1-worker-1:2413 ] - [ DEBUG ]  Connecting to qyapi.weixin.qq.com:443
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2749 ] - [ DEBUG ]  CookieSpec selected: ignoreCookies
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2752 ] - [ DEBUG ]  Auth cache not set in the context
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2752 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2753 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2753 ] - [ DEBUG ]  Attempt 1 to execute request
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2754 ] - [ DEBUG ]  Sending request: GET /cgi-bin/gettoken?corpid=wwf463180fbf61bcc9&corpsecret=i9ZSvrhju10SVzEl7-SIOFNRCK3m_Wq_FDyYRgnpP84 HTTP/1.1
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2755 ] - [ DEBUG ]   >> "GET /cgi-bin/gettoken?corpid=wwf463180fbf61bcc9&corpsecret=i9ZSvrhju10SVzEl7-SIOFNRCK3m_Wq_FDyYRgnpP84 HTTP/1.1[\r][\n]"
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2757 ] - [ DEBUG ]   >> "Accept: */*[\r][\n]"
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2758 ] - [ DEBUG ]   >> "Host: qyapi.weixin.qq.com[\r][\n]"
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2758 ] - [ DEBUG ]   >> "Connection: Keep-Alive[\r][\n]"
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2759 ] - [ DEBUG ]   >> "User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_161)[\r][\n]"
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2759 ] - [ DEBUG ]   >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2759 ] - [ DEBUG ]   >> "[\r][\n]"
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2760 ] - [ DEBUG ]  >> GET /cgi-bin/gettoken?corpid=wwf463180fbf61bcc9&corpsecret=i9ZSvrhju10SVzEl7-SIOFNRCK3m_Wq_FDyYRgnpP84 HTTP/1.1
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2761 ] - [ DEBUG ]  >> Accept: */*
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2761 ] - [ DEBUG ]  >> Host: qyapi.weixin.qq.com
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2762 ] - [ DEBUG ]  >> Connection: Keep-Alive
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2762 ] - [ DEBUG ]  >> User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_161)
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2763 ] - [ DEBUG ]  >> Accept-Encoding: gzip,deflate
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2888 ] - [ DEBUG ]   << "HTTP/1.1 200 OK[\r][\n]"
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2891 ] - [ DEBUG ]   << "Server: nginx[\r][\n]"
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2892 ] - [ DEBUG ]   << "Date: Mon, 20 Jul 2020 14:37:01 GMT[\r][\n]"
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2892 ] - [ DEBUG ]   << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2893 ] - [ DEBUG ]   << "Content-Length: 277[\r][\n]"
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2893 ] - [ DEBUG ]   << "Connection: keep-alive[\r][\n]"
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2893 ] - [ DEBUG ]   << "Error-Code: 0[\r][\n]"
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2894 ] - [ DEBUG ]   << "Error-Msg: ok[\r][\n]"
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2894 ] - [ DEBUG ]   << "[\r][\n]"
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2896 ] - [ DEBUG ]  Receiving response: HTTP/1.1 200 OK
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2896 ] - [ DEBUG ]  << HTTP/1.1 200 OK
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2896 ] - [ DEBUG ]  << Server: nginx
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2897 ] - [ DEBUG ]  << Date: Mon, 20 Jul 2020 14:37:01 GMT
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2897 ] - [ DEBUG ]  << Content-Type: application/json; charset=UTF-8
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2897 ] - [ DEBUG ]  << Content-Length: 277
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2898 ] - [ DEBUG ]  << Connection: keep-alive
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2898 ] - [ DEBUG ]  << Error-Code: 0
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2898 ] - [ DEBUG ]  << Error-Msg: ok
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2903 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2935 ] - [ DEBUG ]  Parsing response as: application/json; charset=UTF-8
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:2936 ] - [ DEBUG ]  Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:3138 ] - [ DEBUG ]   << "{"errcode":0,"errmsg":"ok","access_token":"KxWj038wrO_DXr0ta-I-xPW4Q0BlH-oMN5Ju0LwGOE9WW0cIK4AaJx9G0DBkuACdL6WO70Ux1ixMCfBgEzY8MThOoStbj-SnejS6NkE89glVcH-F99p3lGvlIcVJC-GIlGBNf-PxbDJ9mxRd81vZYWLnEpr1f295VWooPyoUNYTpt8kLcQB71yp4q9r3Cnilv0nsGERa_hwHdZYjZxEe7A","expires_in":7200}"
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:3139 ] - [ DEBUG ]  Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@588cd07b
+2020-07-20 22:36:36  [ ForkJoinPool-1-worker-1:3140 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:3776 ] - [ DEBUG ]  Get connection for route {s}->https://qyapi.weixin.qq.com:443
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:3777 ] - [ DEBUG ]  Connecting to qyapi.weixin.qq.com:443
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4009 ] - [ DEBUG ]  CookieSpec selected: ignoreCookies
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4010 ] - [ DEBUG ]  Auth cache not set in the context
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4010 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4010 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4011 ] - [ DEBUG ]  Attempt 1 to execute request
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4011 ] - [ DEBUG ]  Sending request: POST /cgi-bin/user/create?access_token=KxWj038wrO_DXr0ta-I-xPW4Q0BlH-oMN5Ju0LwGOE9WW0cIK4AaJx9G0DBkuACdL6WO70Ux1ixMCfBgEzY8MThOoStbj-SnejS6NkE89glVcH-F99p3lGvlIcVJC-GIlGBNf-PxbDJ9mxRd81vZYWLnEpr1f295VWooPyoUNYTpt8kLcQB71yp4q9r3Cnilv0nsGERa_hwHdZYjZxEe7A HTTP/1.1
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4011 ] - [ DEBUG ]   >> "POST /cgi-bin/user/create?access_token=KxWj038wrO_DXr0ta-I-xPW4Q0BlH-oMN5Ju0LwGOE9WW0cIK4AaJx9G0DBkuACdL6WO70Ux1ixMCfBgEzY8MThOoStbj-SnejS6NkE89glVcH-F99p3lGvlIcVJC-GIlGBNf-PxbDJ9mxRd81vZYWLnEpr1f295VWooPyoUNYTpt8kLcQB71yp4q9r3Cnilv0nsGERa_hwHdZYjZxEe7A HTTP/1.1[\r][\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4012 ] - [ DEBUG ]   >> "Accept: */*[\r][\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4012 ] - [ DEBUG ]   >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4013 ] - [ DEBUG ]   >> "Content-Length: 68[\r][\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4013 ] - [ DEBUG ]   >> "Host: qyapi.weixin.qq.com[\r][\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4013 ] - [ DEBUG ]   >> "Connection: Keep-Alive[\r][\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4014 ] - [ DEBUG ]   >> "User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_161)[\r][\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4014 ] - [ DEBUG ]   >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4015 ] - [ DEBUG ]   >> "[\r][\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4015 ] - [ DEBUG ]  >> POST /cgi-bin/user/create?access_token=KxWj038wrO_DXr0ta-I-xPW4Q0BlH-oMN5Ju0LwGOE9WW0cIK4AaJx9G0DBkuACdL6WO70Ux1ixMCfBgEzY8MThOoStbj-SnejS6NkE89glVcH-F99p3lGvlIcVJC-GIlGBNf-PxbDJ9mxRd81vZYWLnEpr1f295VWooPyoUNYTpt8kLcQB71yp4q9r3Cnilv0nsGERa_hwHdZYjZxEe7A HTTP/1.1
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4015 ] - [ DEBUG ]  >> Accept: */*
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4016 ] - [ DEBUG ]  >> Content-Type: text/plain; charset=ISO-8859-1
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4016 ] - [ DEBUG ]  >> Content-Length: 68
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4017 ] - [ DEBUG ]  >> Host: qyapi.weixin.qq.com
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4017 ] - [ DEBUG ]  >> Connection: Keep-Alive
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4017 ] - [ DEBUG ]  >> User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_161)
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4017 ] - [ DEBUG ]  >> Accept-Encoding: gzip,deflate
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4018 ] - [ DEBUG ]   >> "{[\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4018 ] - [ DEBUG ]   >> "    "userid": "121595255797185",[\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4019 ] - [ DEBUG ]   >> "    "name": "??121595255797185"+}"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4112 ] - [ DEBUG ]   << "HTTP/1.1 200 OK[\r][\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4112 ] - [ DEBUG ]   << "Server: nginx[\r][\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4113 ] - [ DEBUG ]   << "Date: Mon, 20 Jul 2020 14:37:02 GMT[\r][\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4113 ] - [ DEBUG ]   << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4113 ] - [ DEBUG ]   << "Content-Length: 224[\r][\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4114 ] - [ DEBUG ]   << "Connection: keep-alive[\r][\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4114 ] - [ DEBUG ]   << "Error-Code: 40066[\r][\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4115 ] - [ DEBUG ]   << "Error-Msg: Warning: wrong json format. invalid party list, hint: [1595255822_52_6b9a121880c0ea04a32b0324adb87396], from ip: 110.184.71.190, more info at https://open.work.weixin.qq.com/devtool/query?e=40066[\r][\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4116 ] - [ DEBUG ]   << "[\r][\n]"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4117 ] - [ DEBUG ]  Receiving response: HTTP/1.1 200 OK
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4118 ] - [ DEBUG ]  << HTTP/1.1 200 OK
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4118 ] - [ DEBUG ]  << Server: nginx
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4119 ] - [ DEBUG ]  << Date: Mon, 20 Jul 2020 14:37:02 GMT
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4119 ] - [ DEBUG ]  << Content-Type: application/json; charset=UTF-8
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4120 ] - [ DEBUG ]  << Content-Length: 224
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4121 ] - [ DEBUG ]  << Connection: keep-alive
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4122 ] - [ DEBUG ]  << Error-Code: 40066
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4123 ] - [ DEBUG ]  << Error-Msg: Warning: wrong json format. invalid party list, hint: [1595255822_52_6b9a121880c0ea04a32b0324adb87396], from ip: 110.184.71.190, more info at https://open.work.weixin.qq.com/devtool/query?e=40066
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4125 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4127 ] - [ DEBUG ]  Parsing response as: application/json; charset=UTF-8
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4127 ] - [ DEBUG ]  Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4179 ] - [ DEBUG ]   << "{"errcode":40066,"errmsg":"Warning: wrong json format. invalid party list, hint: [1595255822_52_6b9a121880c0ea04a32b0324adb87396], from ip: 110.184.71.190, more info at https://open.work.weixin.qq.com/devtool/query?e=40066"}"
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4180 ] - [ DEBUG ]  Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@66bb0b9d
+2020-07-20 22:36:37  [ ForkJoinPool-1-worker-1:4180 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+2020-07-20 22:36:37  [ Finalizer:4486 ] - [ DEBUG ]  Connection 0.0.0.0:51361<->183.3.224.149:443 closed

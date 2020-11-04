@@ -16,7 +16,8 @@ import java.util.concurrent.TimeUnit;
 public class BasePage {
 //    AndroidDriver<MobileElement> driver;
     AppiumDriver<MobileElement> driver;
-    //    IOSDriver
+    AndroidDriver<MobileElement> androidDriver;
+    IOSDriver<MobileElement> iosDriver;
     WebDriverWait wait;
 
     public BasePage(AppiumDriver<MobileElement> driver) {
@@ -31,7 +32,7 @@ public class BasePage {
         desiredCapabilities.setCapability("appPackage", "com.xueqiu.android");
         desiredCapabilities.setCapability("appActivity", ".view.WelcomeActivityAlias");
         desiredCapabilities.setCapability("noReset", "true");
-        desiredCapabilities.setCapability("udid", "");
+        desiredCapabilities.setCapability("udid", "emulator-5554");
 //        desiredCapabilities.setCapability("dontStopAppOnReset", "true");
 
         URL remoteUrl = null;
@@ -46,6 +47,7 @@ public class BasePage {
         //todo: 等待优化
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, 10);
+
     }
 
 

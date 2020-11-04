@@ -1,5 +1,6 @@
 package test_mock;
 import com.github.tomakehurst.wiremock.WireMockServer;
+import io.restassured.path.json.JsonPath;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -84,4 +85,5 @@ public class Demo01Wiremock {
         );
         Thread.sleep(100000);
     }
+
 }
