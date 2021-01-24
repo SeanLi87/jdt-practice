@@ -10,6 +10,8 @@ import io.restassured.specification.FilterableResponseSpecification;
 import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.Test;
 
+import java.util.Map;
+
 import static io.restassured.RestAssured.*;
 
 public class Demo {
@@ -33,6 +35,26 @@ public class Demo {
                 .then()
                 .log()
                 .body();
+
+    }
+
+    @Test
+    void testPythonServer(){
+        Response response = given()
+                .when()
+                .get("http://127.0.0.1:8081/1.json")
+                .then()
+                .log()
+                .all()
+                .extract()
+                .response();
+
+        Map<String ,Map<String,Map<String,String>>> items = response.path("items");
+        Map<String, Map<String,String>> properties = items.get("properties");
+        Map<String, String> id = properties.get("id");
+        String description = id.get("description");
+        System.out.println(description);
+
 
     }
 

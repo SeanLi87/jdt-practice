@@ -3,19 +3,30 @@ package test_restAssured.wechart.api_object;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
+import static io.restassured.http.ContentType.JSON;
 
 import io.restassured.filter.Filter.*;
 
 public class DepartmentApiObject {
 
-    public Response createDepartment(String name, String name_en, String id, String accessToken) {
+    public Response createDepartment(String name, String name_en, String parentid, String order, String id, String accessToken) {
         String body = "{\n" +
                 "\"name\": \""+name+"\",\n" +
-                "\"name_en\": \""+name_en+"\",\n" +
-                "\"parentid\": 1,\n" +
-                "\"order\": 2\n" +
-                "\"id\": "+id+"\n"+
-                "}";
+                "\"name_en\": \""+name_en+"\"";
+        if (!"empty".equals(parentid)){
+            body = body +
+                    ",\n\"parentid\": "+parentid;
+        }
+        if (!"empty".equals(order)){
+            body = body +
+                    ",\n\"order\": "+order;
+        }
+        if (!"empty".equals(id)){
+            body = body +
+                    ",\n\"id\": "+id;
+        }
+        body = body + "\n}";
+        System.out.println(body);
 
         Response createResponse = given()
                 .contentType("application/json;charset=utf-8")
@@ -41,7 +52,7 @@ public class DepartmentApiObject {
         return deleteResponse;
     }
 
-    public Response updateDepartment(String name, String name_en, String accessToken) {
+    public Response updateDepartment(String id, String name, String name_en, String accessToken) {
         String body = "{\n" +
                 "   \"id\": 2,\n" +
                 "   \"name\": \""+name+"\",\n" +

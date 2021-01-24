@@ -46,7 +46,7 @@ public class UserApiObject {
 
         String body = "{\n" +
                 "    \"userid\": \""+userId+"\",\n" +
-                "    \"name\": \""+name+"\"+" +
+                "    \"name\": \""+name+"\"\n" +
                 "}";
 
         Response response = given()

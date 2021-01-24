@@ -15,7 +15,7 @@ public class EnvTask {
         ArrayList<Integer> departmentIdList = departmentList.path("department.id");
         //循环删除
         for (int id: departmentIdList) {
-            if (1 == id){
+            if (1 == id){//不删除第一个父类部门
                 continue;
             }
             Response deleteResponse = new DepartmentApiObject().deleteDepartment(id, accessToken);
